@@ -18,7 +18,7 @@ enum Session{
 };
 
 int main(int argc, char* argv[]) {
-    std::vector<std::string> session_strings = {"training", "testing"};
+    std::vector<std::string> session_strings = {"Training", "Testing"};
     
     Time train_time = seconds(10);
     Time  test_time = seconds(15);
@@ -44,6 +44,7 @@ int main(int argc, char* argv[]) {
 
         // if the sessions 
         if (session_clock.get_elapsed_time() > session_times[current_session] && current_session == training){
+            print("Starting Testing session. You have {} seconds.\n", test_time.as_seconds());
             current_session = testing;
             session_clock.restart();
         }

@@ -14,26 +14,4 @@ include_directories(include)
 add_executable(experiment src/experiment.cpp src/ExperimentHelper.cpp)
 target_link_libraries(experiment mahi::util)
 
-# create test executable and link it to mahi-util
-add_executable(test_command_line_args src/test_command_line_args.cpp)
-target_link_libraries(test_command_line_args mahi::util)
-
-# create test executable and link it to mahi-util
-add_executable(test_loading_data src/test_loading_data.cpp)
-target_link_libraries(test_loading_data mahi::util)
-
-# create test executable and link it to mahi-util
-add_executable(test_console_input src/test_console_input.cpp)
-target_link_libraries(test_console_input mahi::util)
-
-# create test executable and link it to mahi-util
-add_executable(test_collecting_data src/test_collecting_data.cpp)
-target_link_libraries(test_collecting_data mahi::util)
-
-# create test executable and link it to mahi-util
-add_executable(test_timing_elements src/test_timing_elements.cpp)
-target_link_libraries(test_timing_elements mahi::util)
-
-# create test executable and link it to mahi-util
-add_executable(test_saving_data src/test_saving_data.cpp)
-target_link_libraries(test_saving_data mahi::util)
+add_subdirectory(test)

@@ -47,7 +47,7 @@ int main(int argc, char* argv[]) {
     // or even put it in a folder with the subject number name itself. You also may want to sometimes make this an absolute
     // filepath, i.e. C:/data/experiment/save_data/... just to make sure everything will work no matter where the executable is.
     Timestamp ts;
-    std::string filepath = "../../data/save_data/data_" + ts.yyyy_mm_dd_hh_mm_ss() + ".csv";
+    std::string filepath = "../../../data/save_data/data_" + ts.yyyy_mm_dd_hh_mm_ss() + ".csv";
 
     // There are many ways I could have done this. I could have made the data into strings when I collected
     // the data, but the string conversion takes a bit of time (probably not enough to be significant in this)

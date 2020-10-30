@@ -15,7 +15,7 @@ using namespace mahi::util;
 
 int main(int argc, char* argv[]) {
     // sometimes you may want this to be an absolute filepath just to make sure.
-    std::string filepath = "../../data/load_data/test_data.csv";
+    std::string filepath = "../../../data/load_data/test_data.csv";
     
     // read back subset of header without offset
     std::array<std::string,2> headers_read;
