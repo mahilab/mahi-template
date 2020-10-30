@@ -33,6 +33,7 @@ int main(int argc, char* argv[]) {
 
     // this would go somewhere in the loop that presents data and checks the response
     for (auto i = 0; i < presented_cues.size(); i++){
+        // create new CollectData variable with the current values and add it to the data vector
         CollectData data_set{presented_cues[i],responded_cues[i],responded_times[i],sessions[i]};
         data.push_back(data_set);
     }

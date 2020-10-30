@@ -18,6 +18,8 @@ int main(int argc, char* argv[]) {
     std::string filepath = "../../../data/load_data/test_data.csv";
     
     // read back subset of header without offset
+    // notice that this is an array here (not vector). It needs a size to read properly, and this is 
+    // the easiest way. We could also add dummy values to a vector, but that is unnecessary
     std::array<std::string,2> headers_read;
 
     csv_read_row(filepath, headers_read, 0, 0);

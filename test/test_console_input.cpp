@@ -18,7 +18,7 @@ int main(int argc, char* argv[]) {
         // I didn't want to take an invalid answer (i.e. not 1-5, and not a random letter or something),
         // so I run this while loop until I get an answer that is part of the response set. Note I start
         // with answer of -1 so that it always runs the loop at least once. I didn't know how to do this,
-        // but I literally found it by googling "check if number part of a vector c++" (it is the second answer).
+        // but I found it by googling "check if number part of a vector c++" (it is the second answer).
         // Also note that there could be easier solutions, i.e. 0 < answer < 5, but that won't necessarily work
         // if you have non-continuous sets or the values change. This works regardless of the response list.
         // https://www.techiedelight.com/check-vector-contains-given-element-cpp/#:~:text=The%20simplest%20solution%20is%20to,using%20std%3A%3Acount%20function.
