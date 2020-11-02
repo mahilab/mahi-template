@@ -51,6 +51,7 @@ int main(int argc, char* argv[]) {
 
         // if the session timing is up and the current session is trianing, reset session clock and change the session to "testing"
         if (session_clock.get_elapsed_time() > session_times[current_session] && current_session == training){
+            cls();
             print("Starting Testing session. You have {} seconds.\n", test_time.as_seconds());
             current_session = testing;
             session_clock.restart();

@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
     std::cout << std::endl;
 
     // read back subset of data with one row offset (header) as ints
-    std::array<std::array<double,2>,5> data;
+    std::array<std::array<int,2>,5> data;
     csv_read_rows(filepath, data, 1, 0);
     for (auto& data_row : data){
         for (auto& data_val : data_row){

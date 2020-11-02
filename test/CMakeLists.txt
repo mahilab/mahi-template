@@ -11,6 +11,10 @@ add_executable(test_console_input test_console_input.cpp)
 target_link_libraries(test_console_input mahi::util)
 
 # create test executable and link it to mahi-util
+add_executable(test_randomization test_randomization.cpp)
+target_link_libraries(test_randomization mahi::util)
+
+# create test executable and link it to mahi-util
 add_executable(test_collecting_data test_collecting_data.cpp)
 target_link_libraries(test_collecting_data mahi::util)
 
