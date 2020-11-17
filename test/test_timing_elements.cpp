@@ -1,13 +1,3 @@
-/*
-The data we want to collect is 
-    presented cue
-    response cue
-    response time
-    session (training or testing)
-
-so make a custom type that will hold that and test out using it
-*/
-
 #include<Mahi/Util.hpp>
 
 using namespace mahi::util;
