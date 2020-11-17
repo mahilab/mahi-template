@@ -15,8 +15,11 @@ enum Session{
     testing   // 1
 };
 
-// This is pulled from test_saving_data.cpp and is implemented in ExperimentHelper.cpp
+// Save data given a vector of the CollectData structure and a filepath.
+// Each component of data is converted to a string before it is saved.
 void save_data(std::string filepath, std::vector<CollectData> data);
 
-// This is pulled from test_saving_data.cpp and is implemented in ExperimentHelper.cpp
+// This loads data given a valid filepath and saves it into a 2d array
+// of size 5x2 with the first column corresponding to the presented cue
+// and the second column corresponding to the correct response cue.
 std::array<std::array<int,2>,5> load_data(std::string filepath);
